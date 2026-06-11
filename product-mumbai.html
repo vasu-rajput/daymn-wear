@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mumbai Cap | Daymn Wear</title>
+    <meta name="description" content="Shop the Daymn Wear Mumbai cap, the first city drop." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,800;1,900&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="product-page">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Daymn Wear home">DAYMN WEAR</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        Menu
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="cities.html">Cities</a>
+        <a href="stories.html">Stories</a>
+        <a href="product-mumbai.html">Shop</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="product-layout">
+        <div class="product-media">
+          <img src="assets/cap-mumbai.svg" alt="Daymn Wear Mumbai cap in charcoal and red" />
+        </div>
+        <div class="product-info">
+          <p class="eyebrow">Mumbai 001</p>
+          <h1>Mumbai Cap</h1>
+          <p class="price">₹1,999</p>
+          <p>
+            A structured six-panel cap with charcoal cotton twill, signal-red embroidery, and a
+            warm underbrim inspired by Mumbai taxi lights at night.
+          </p>
+          <p id="inventory-count" class="inventory-count" aria-live="polite">
+            Checking inventory...
+          </p>
+
+          <form class="product-form" data-product-id="mumbai-cap">
+            <label for="quantity">Quantity</label>
+            <input id="quantity" name="quantity" type="number" min="1" max="5" value="1" />
+
+            <button
+              class="button button-primary add-to-cart"
+              type="button"
+              data-variant-id="YOUR-MUMBAI-VARIANT-ID"
+            >
+              Add to Cart
+            </button>
+            <p class="form-message" role="status" aria-live="polite"></p>
+          </form>
+
+          <dl class="product-details">
+            <div>
+              <dt>Material</dt>
+              <dd>Cotton twill shell, stitched eyelets, metal clasp</dd>
+            </div>
+            <div>
+              <dt>Fit</dt>
+              <dd>Adjustable, low-to-mid profile</dd>
+            </div>
+            <div>
+              <dt>Drop</dt>
+              <dd>Limited launch run</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Daymn Wear</p>
+      <a href="stories.html">Read the story</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="js/supabase.js"></script>
+    <script src="js/razorpay.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

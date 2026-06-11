@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin | Daymn Wear</title>
+    <meta name="description" content="Daymn Wear admin dashboard." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,800;1,900&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body class="admin-page">
+    <div class="admin-password-overlay" id="admin-overlay">
+      <div class="admin-login-panel">
+        <p>DAYMN WEAR</p>
+        <input id="admin-password" type="password" placeholder="Password" autocomplete="current-password" />
+        <p id="password-error">Wrong password. Try again.</p>
+        <button id="enter-admin" type="button">Enter Admin</button>
+      </div>
+    </div>
+
+    <main class="admin-dashboard" id="admin-dashboard" hidden>
+      <section class="admin-heading">
+        <div>
+          <p class="eyebrow">Daymn Wear</p>
+          <h1>Admin Dashboard</h1>
+        </div>
+        <button class="admin-export" type="button" onclick="exportCSV()">Export CSV</button>
+      </section>
+
+      <section class="admin-stats" aria-label="Store stats">
+        <article><strong id="stat-orders">0</strong><span>Total Orders</span></article>
+        <article><strong id="stat-revenue">₹0</strong><span>Revenue</span></article>
+        <article><strong id="stat-remaining">100</strong><span>Caps Remaining</span></article>
+        <article><strong id="stat-shipped">0</strong><span>Shipped</span></article>
+      </section>
+
+      <section class="low-stock-banner" id="low-stock-banner" hidden>
+        <p id="low-stock-text"></p>
+      </section>
+
+      <section class="admin-table-wrap">
+        <table class="admin-orders-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Size</th>
+              <th>Address</th>
+              <th>Pincode</th>
+              <th>Payment-ID</th>
+              <th>Date</th>
+              <th>Shipped</th>
+            </tr>
+          </thead>
+          <tbody id="orders-tbody"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../js/supabase.js"></script>
+    <script src="../js/admin.js"></script>
+  </body>
+</html>

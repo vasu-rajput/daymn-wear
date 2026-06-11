@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cities | Daymn Wear</title>
+    <meta name="description" content="Explore Daymn Wear city drops and upcoming locations." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,800;1,900&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Daymn Wear home">DAYMN WEAR</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        Menu
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="cities.html">Cities</a>
+        <a href="stories.html">Stories</a>
+        <a href="product-mumbai.html">Shop</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-intro">
+        <p class="eyebrow">City index</p>
+        <h1>Drops shaped by local rhythm.</h1>
+        <p>Each city gets its own color language, mark, and release story.</p>
+      </section>
+
+      <section class="city-list">
+        <article class="city-card city-card-active">
+          <div>
+            <p class="eyebrow">Available now</p>
+            <h2>Mumbai</h2>
+            <p>Coastal air, black-yellow taxis, signal red, concrete heat.</p>
+          </div>
+          <a class="button button-primary" href="product-mumbai.html">View Cap</a>
+        </article>
+        <article class="city-card">
+          <div>
+            <p class="eyebrow">Coming soon</p>
+            <h2>Delhi</h2>
+            <p>Winter haze, market boards, wide roads, old stone.</p>
+          </div>
+          <span class="status-pill">Waitlist soon</span>
+        </article>
+        <article class="city-card">
+          <div>
+            <p class="eyebrow">Coming soon</p>
+            <h2>Bengaluru</h2>
+            <p>Rain trees, startup glass, filter coffee, evening traffic.</p>
+          </div>
+          <span class="status-pill">In research</span>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Daymn Wear</p>
+      <a href="stories.html">Read the city stories</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

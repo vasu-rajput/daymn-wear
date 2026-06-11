@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Order Confirmed | Daymn Wear</title>
+    <meta
+      name="description"
+      content="Your Daymn Wear Mumbai Cap order is confirmed."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,800;1,900&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Daymn Wear home">Daymn Wear</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        Menu
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="index.html#cities">Cities</a>
+        <a href="index.html#stories">Stories</a>
+        <a href="index.html#manifesto">About</a>
+        <a href="index.html#drop">Shop Drop 001</a>
+      </nav>
+    </header>
+
+    <main class="order-confirm">
+      <section class="order-confirm-card">
+        <svg width="80" height="80" viewBox="0 0 80 80" role="img" aria-label="Order confirmed">
+          <circle cx="40" cy="40" r="35" fill="none" stroke="#E8610A" stroke-width="4"/>
+          <path d="M24 41L35 52L57 28" fill="none" stroke="#E8610A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h1>Order Confirmed.</h1>
+        <p><em>Your piece of Mumbai is on its way.</em></p>
+        <div class="order-summary-box">
+          <p>Payment ID: <span id="confirm-payment-id">—</span></p>
+          <p>Size: <span id="confirm-size">—</span></p>
+          <p>Amount: <span id="confirm-amount">—</span></p>
+        </div>
+        <p>We'll email you a confirmation and tracking details within 24 hours.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="index.html">Back to Home</a>
+          <button id="share-btn" style="
+  background: transparent;
+  border: 1px solid rgba(242,237,228,0.3);
+  color: #F2EDE4;
+  padding: 0.9rem 2rem;
+  font-family: Space Grotesk, sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+">Share Your Drop</button>
+
+<script>
+  document.getElementById('share-btn').addEventListener('click', function() {
+    if (navigator.share) {
+      navigator.share({
+        title: 'Daymn Wear — Mumbai Cap',
+        text: 'Just copped the Mumbai cap from Daymn Wear. Wear the Story.',
+        url: 'https://daymnwear.com'
+      });
+    } else {
+      navigator.clipboard.writeText(window.location.href).then(function() {
+        document.getElementById('share-btn').textContent = 'Link Copied!';
+        setTimeout(function() {
+          document.getElementById('share-btn').textContent = 'Share Your Drop';
+        }, 2000);
+      });
+    }
+  });
+</script>
+        </div>
+        <p id="share-feedback" class="form-message" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <h2>Daymn Wear</h2>
+        <p>Limited edition caps for Indian cities. Real history, built for the street.</p>
+        <div class="socials"><a href="index.html">Instagram</a><a href="index.html">X</a></div>
+      </div>
+      <div>
+        <h3>Shop</h3>
+        <a href="index.html#drop">Mumbai Drop</a>
+        <a href="index.html#cities">City Index</a>
+      </div>
+      <div>
+        <h3>Stories</h3>
+        <a href="index.html#stories">Editorial</a>
+        <a href="stories.html">Archive</a>
+      </div>
+      <div>
+        <h3>Brand</h3>
+        <a href="index.html#manifesto">About</a>
+        <a href="cities.html">Season 01</a>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Daymn Wear</p>
+        <p><em>Wear the Story.</em></p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

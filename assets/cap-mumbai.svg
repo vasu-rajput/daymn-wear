@@ -1,0 +1,18 @@
+<svg width="960" height="640" viewBox="0 0 960 640" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Daymn Wear Mumbai cap</title>
+  <desc id="desc">A charcoal baseball cap with red Daymn embroidery and a warm yellow underbrim.</desc>
+  <rect width="960" height="640" rx="28" fill="#FFFAF2"/>
+  <path d="M214 405C239 252 355 164 508 164C654 164 751 247 774 393C670 432 559 450 441 447C356 445 280 431 214 405Z" fill="#242321"/>
+  <path d="M223 399C253 284 356 215 493 215C624 215 718 282 758 391C659 424 553 438 441 435C356 433 283 421 223 399Z" fill="#34322F"/>
+  <path d="M504 169C453 250 431 337 438 432" stroke="#171512" stroke-width="8" stroke-linecap="round"/>
+  <path d="M365 188C337 255 326 327 332 421" stroke="#171512" stroke-width="8" stroke-linecap="round"/>
+  <path d="M632 198C649 264 655 329 650 412" stroke="#171512" stroke-width="8" stroke-linecap="round"/>
+  <path d="M206 405C162 416 121 439 86 473C214 500 362 507 529 492C637 482 753 456 878 414C839 386 804 377 774 393C668 426 557 440 441 437C348 435 270 424 206 405Z" fill="#E9B949"/>
+  <path d="M86 473C223 446 369 442 523 462C637 477 755 461 878 414C753 456 637 482 529 492C362 507 214 500 86 473Z" fill="#CF2F24"/>
+  <path d="M403 308C422 286 447 274 479 274C519 274 550 292 572 329C584 297 605 281 637 281C673 281 695 304 701 350C708 400 684 426 629 428H384V397H427V326L386 428H338L296 326V428H253V279H314L363 385L403 308Z" fill="#FFFAF2"/>
+  <path d="M451 397H509C535 397 552 387 560 368C548 324 521 304 480 304C449 304 430 321 421 354L451 397Z" fill="#CF2F24"/>
+  <path d="M604 397H628C654 397 664 384 660 357C657 327 646 312 627 312C604 312 592 329 592 363C592 376 596 388 604 397Z" fill="#CF2F24"/>
+  <path d="M252 442C401 465 574 460 771 427" stroke="#171512" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="407" cy="229" r="9" fill="#E9B949"/>
+  <circle cx="559" cy="228" r="9" fill="#E9B949"/>
+</svg>
